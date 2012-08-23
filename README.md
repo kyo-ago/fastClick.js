@@ -32,22 +32,24 @@ SYNOPSIS
 DEMO
 -------
 
-live demo http://jsrun.it/kyo_ago/fastClick  
-(edit demo code http://jsdo.it/kyo_ago/fastClick)
+[live demo](http://jsrun.it/kyo_ago/fastClick)  
+([fork demo code](http://jsdo.it/kyo_ago/fastClick))
 
 LICENSE
 -------
 
-	 * fastClick
-	 * Copyright (C) KAYAC Inc. | http://www.kayac.com/
-	 * Dual licensed under the MIT <http://www.opensource.org/licenses/mit-license.php>
-	 * and GPL <http://www.opensource.org/licenses/gpl-license.php> licenses.
-	 * @author @kyo_ago
+	fastClick
+	Copyright (C) KAYAC Inc. | http://www.kayac.com/
+	Dual licensed under the MIT <http://www.opensource.org/licenses/mit-license.php>
+	and GPL <http://www.opensource.org/licenses/gpl-license.php> licenses.
+	@author @kyo_ago
 
 LINKS
 -------
 
 [Creating Fast Buttons for Mobile Web Applications - Mobile — Google Developers](https://developers.google.com/mobile/articles/fast_buttons)
+
+[FastClick: native-like tapping for touch apps | FT Labs](http://labs.ft.com/2011/08/fastclick-native-like-tapping-for-touch-apps/)
 
 [Configuring Defaults(useFastClick)](http://jquerymobile.com/demos/1.0b1/docs/api/globalconfig.html)
 
