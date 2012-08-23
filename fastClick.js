@@ -5,7 +5,7 @@
  * and GPL <http://www.opensource.org/licenses/gpl-license.php> licenses.
  * Date: 2012-07-06
  * @author @kyo_ago
- * @version 1.0.1
+ * @version 1.0.2
  * @see http://github.com/kyo-ago/fastClick
  */
 
@@ -24,6 +24,8 @@ var fastClick = function (base_selector, ignore_selector) {
 };
 fastClick.coords = [];
 fastClick.clickWait = 2000;
+fastClick.clickIgnoreX = 25;
+fastClick.clickIgnoreY = 25;
 fastClick.windowBinder = function () {
 	window.addEventListener('click', fastClick.windowHandler, true);
 };
@@ -34,14 +36,17 @@ fastClick.windowHandler = function (evn) {
 	if (store && store.clickable) {
 		return;
 	}
+
 	var touche = evn.changedTouches ? evn.changedTouches[0] : evn;
 	var coords = fastClick.coords;
+	var ignoreX = fastClick.clickIgnoreX;
+	var ignoreY = fastClick.clickIgnoreY;
 	for (var i = 0, l = coords.length; i < l; i += 2) {
 		var cordX = coords[i];
 		var cordY = coords[i + 1];
 		var cliX = Math.abs(touche.clientX - cordX);
 		var cliY = Math.abs(touche.clientY - cordY);
-		if (cliX < 25 && cliY < 25) {
+		if (cliX < ignoreX && cliY < ignoreY) {
 			event.returnValue = false;
 			target['data-fc-store'] = undefined;
 			evn.stopPropagation();
