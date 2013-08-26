@@ -1,3 +1,9 @@
+obsolete repository.
+=================
+
+see also [ftlabs/fastclick](https://github.com/ftlabs/fastclick)
+
+
 fastClick.js
 =================
 
